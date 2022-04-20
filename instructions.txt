@@ -1,0 +1,14 @@
+flutter pub add provider
+flutter pub add uuid
+
+when having a provide we have several methods to interact with provider
+context.read<T>() // Like a snapshot, use it for one way communication, 
+onCallbacks use like onTap events, etc
+
+context.select((value)=> null)// allows you to watch specific changes inside your provider. 
+only works inside build, 
+
+context.watch, watching for changes in our provider, also optional providers
+
+Consumer is like a building block that will rebuild your widget when changes happen
+child within consumer, is a widget that will survive changes to our provider
